@@ -1,5 +1,5 @@
 {
-    "name": "ctsoft/laravel-pretty-pagination",
+    "name": "St-Sinner/laravel-pretty-pagination",
     "description": "Pretty pagination URLs for Laravel.",
     "keywords": [
         "laravel",
@@ -24,13 +24,13 @@
     },
     "autoload": {
         "psr-4": {
-            "CTSoft\\Laravel\\PrettyPagination\\": "src/"
+            "St-Sinner\\Laravel\\PrettyPagination\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "CTSoft\\Laravel\\PrettyPagination\\Providers\\PrettyPaginationProvider"
+                "St-Sinner\\Laravel\\PrettyPagination\\Providers\\PrettyPaginationProvider"
             ]
         }
     },
