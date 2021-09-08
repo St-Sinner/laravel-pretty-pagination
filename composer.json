@@ -24,7 +24,7 @@
     },
     "autoload": {
         "psr-4": {
-            "st-sinner\\Laravel\\PrettyPagination\\": "src/"
+            "StSinner\\Laravel\\PrettyPagination\\": "src/"
         }
     },
     "extra": {
