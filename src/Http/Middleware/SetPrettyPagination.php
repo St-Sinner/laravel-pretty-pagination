@@ -1,10 +1,10 @@
 <?php
 
-namespace CTSoft\Laravel\PrettyPagination\Http\Middleware;
+namespace StSinner\Laravel\PrettyPagination\Http\Middleware;
 
 use Closure;
-use CTSoft\Laravel\PrettyPagination\Pagination\LengthAwarePaginator;
-use CTSoft\Laravel\PrettyPagination\Pagination\Paginator;
+use StSinner\Laravel\PrettyPagination\Pagination\LengthAwarePaginator;
+use StSinner\Laravel\PrettyPagination\Pagination\Paginator;
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator as BaseLengthAwarePaginator;

@@ -1,8 +1,8 @@
 <?php
 
-namespace CTSoft\Laravel\PrettyPagination\Providers;
+namespace StSinner\Laravel\PrettyPagination\Providers;
 
-use CTSoft\Laravel\PrettyPagination\Routing\Route;
+use StSinner\Laravel\PrettyPagination\Routing\Route;
 use Illuminate\Routing\Route as BaseRoute;
 use Illuminate\Support\ServiceProvider;
 

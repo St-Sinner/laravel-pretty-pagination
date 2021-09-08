@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "st-sinner\\Laravel\\PrettyPagination\\Providers\\PrettyPaginationProvider"
+                "StSinner\\Laravel\\PrettyPagination\\Providers\\PrettyPaginationProvider"
             ]
         }
     },
