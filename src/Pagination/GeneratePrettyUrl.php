@@ -13,15 +13,16 @@ trait GeneratePrettyUrl
      *
      * @var array
      */
-    protected $parameters;
+    protected array $parameters;
 
     /**
      * Get the URL for a given page number.
      *
      * @param int $page
+     *
      * @return string
      */
-    public function url($page)
+    public function url(int $page): string
     {
         $url = $this->getPageUrl(max($page, 1));
         $url = $this->addQueryString($url);
@@ -34,6 +35,7 @@ trait GeneratePrettyUrl
      * Get the URL for a page.
      *
      * @param int $page
+     *
      * @return string
      */
     protected function getPageUrl(int $page): string
@@ -50,25 +52,6 @@ trait GeneratePrettyUrl
     }
 
     /**
-     * Add the query string to an URL.
-     *
-     * @param string $url
-     * @return string
-     */
-    protected function addQueryString(string $url): string
-    {
-        if (!$this->query) {
-            return $url;
-        }
-
-        return sprintf('%s%s%s',
-            $url,
-            Str::contains($url, '?') ? '&' : '?',
-            Arr::query($this->query)
-        );
-    }
-
-    /**
      * Get the parameters for paginator generated URLs.
      *
      * @return array
@@ -80,5 +63,26 @@ trait GeneratePrettyUrl
         }
 
         return $this->parameters;
+    }
+
+    /**
+     * Add the query string to an URL.
+     *
+     * @param string $url
+     *
+     * @return string
+     */
+    protected function addQueryString(string $url): string
+    {
+        if (!$this->query) {
+            return $url;
+        }
+
+        return sprintf(
+            '%s%s%s',
+            $url,
+            Str::contains($url, '?') ? '&' : '?',
+            Arr::query($this->query)
+        );
     }
 }

@@ -14,12 +14,13 @@ class Paginator extends BasePaginator
      *
      * @var Closure
      */
-    protected static $currentParametersResolver;
+    protected static Closure $currentParametersResolver;
 
     /**
      * Resolve the current parameters or return the default value.
      *
      * @param array $default
+     *
      * @return array
      */
     public static function resolveCurrentParameters(array $default = []): array
@@ -35,6 +36,7 @@ class Paginator extends BasePaginator
      * Set the current request parameters resolver callback.
      *
      * @param Closure $resolver
+     *
      * @return void
      */
     public static function currentParametersResolver(Closure $resolver): void

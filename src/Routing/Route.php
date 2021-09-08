@@ -9,6 +9,8 @@ use Illuminate\Support\Str;
 
 class Route
 {
+    public string $uri;
+
     /**
      * Add the route as pagination.
      *
@@ -22,7 +24,8 @@ class Route
 
             $route = clone $this;
 
-            $route->uri = sprintf('%s%s{page}',
+            $route->uri = sprintf(
+                '%s%s{page}',
                 Str::finish($route->uri, '/'),
                 $prefix ? Str::finish($prefix, '/') : ''
             );

@@ -13,7 +13,7 @@ class PrettyPaginationProvider extends ServiceProvider
      *
      * @return void
      */
-    public function register()
+    public function register(): void
     {
         BaseRoute::mixin(new Route());
     }

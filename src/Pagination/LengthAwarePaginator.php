@@ -13,6 +13,7 @@ class LengthAwarePaginator extends BaseLengthAwarePaginator
      * Resolve the current parameters or return the default value.
      *
      * @param array $default
+     *
      * @return array
      */
     public static function resolveCurrentParameters(array $default = []): array
@@ -24,6 +25,7 @@ class LengthAwarePaginator extends BaseLengthAwarePaginator
      * Set the current request parameters resolver callback.
      *
      * @param Closure $resolver
+     *
      * @return void
      */
     public static function currentParametersResolver(Closure $resolver): void
