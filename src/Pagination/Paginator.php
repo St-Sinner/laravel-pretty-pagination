@@ -14,7 +14,7 @@ class Paginator extends BasePaginator
      *
      * @var Closure
      */
-    protected static Closure $currentParametersResolver;
+    protected static $currentParametersResolver;
 
     /**
      * Resolve the current parameters or return the default value.

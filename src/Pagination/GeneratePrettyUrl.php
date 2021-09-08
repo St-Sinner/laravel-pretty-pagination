@@ -13,7 +13,7 @@ trait GeneratePrettyUrl
      *
      * @var array
      */
-    protected array $parameters;
+    protected $parameters;
 
     /**
      * Get the URL for a given page number.
@@ -22,7 +22,7 @@ trait GeneratePrettyUrl
      *
      * @return string
      */
-    public function url(int $page): string
+    public function url($page)
     {
         $url = $this->getPageUrl(max($page, 1));
         $url = $this->addQueryString($url);

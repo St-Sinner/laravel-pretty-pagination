@@ -3,12 +3,12 @@
 namespace StSinner\Laravel\PrettyPagination\Http\Middleware;
 
 use Closure;
-use StSinner\Laravel\PrettyPagination\Pagination\LengthAwarePaginator;
-use StSinner\Laravel\PrettyPagination\Pagination\Paginator;
 use Illuminate\Container\Container;
 use Illuminate\Http\Request;
 use Illuminate\Pagination\LengthAwarePaginator as BaseLengthAwarePaginator;
 use Illuminate\Pagination\Paginator as BasePaginator;
+use StSinner\Laravel\PrettyPagination\Pagination\LengthAwarePaginator;
+use StSinner\Laravel\PrettyPagination\Pagination\Paginator;
 
 class SetPrettyPagination
 {
@@ -20,7 +20,7 @@ class SetPrettyPagination
      *
      * @return mixed
      */
-    public function handle(Request $request, Closure $next): mixed
+    public function handle(Request $request, Closure $next)
     {
         $container = Container::getInstance();
 
